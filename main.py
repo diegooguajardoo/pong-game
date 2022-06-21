@@ -37,13 +37,13 @@ while game_is_on:
     if ball.xcor() > 380:
         ball.reset_position()
         ball.x_bounce()
-        scoreboard.add_point(2)
+        scoreboard.add_point(player=2)
         scoreboard.refresh()
 
     if ball.xcor() < -380:
         ball.reset_position()
         ball.x_bounce()
-        scoreboard.add_point(1)
+        scoreboard.add_point(player=1)
         scoreboard.refresh()
 
 screen.exitonclick()
