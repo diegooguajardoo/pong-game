@@ -8,7 +8,6 @@ class Scoreboard(Turtle):
         self.penup()
         self.hideturtle()
         self.goto(0, 260)
-
         self.score1 = 0
         self.score2 = 0
         self.refresh()
@@ -22,3 +21,5 @@ class Scoreboard(Turtle):
     def refresh(self):
         self.clear()
         self.write(arg=f"{self.score1}    {self.score2}", align="center", font=("Menlo", 20, "normal"))
+
+
